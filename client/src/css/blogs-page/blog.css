@@ -1,0 +1,217 @@
+.container {
+    width: 100%;
+    min-height: 100%;
+    clear: both;
+    background-color: white;
+    z-index: 0;
+    position: absolute;
+}
+
+.fixed-navbar {
+    position: fixed;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    width: 100px;
+    height: 300px;
+    margin-left: 10%;
+    animation: scale-1-1 5s linear infinite;
+}
+
+.back-hover {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    border: 2px solid black;
+    transition: all 0.3s linear;
+}
+
+.heart-in-blog {
+    position: absolute;
+    margin-left: -115px;
+    margin-top: -50px;
+}
+
+.back-hover:hover {
+    background-color: black;
+    color: white;
+}
+
+@keyframes scale-1-1 {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.like-card {
+    margin: -10px 0 0 15px;
+}
+
+.fixed-navbar-row {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.fixed-navbar-row img {
+    width: 30px;
+    height: 30px;
+    margin-top: -25px;
+    float: left;
+}
+
+.center-blog-text {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.diagonal {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    height: 52vh;
+    justify-content: center;
+}
+
+.diagonal:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.diagonal:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    bottom: -1px;
+    border-left-color: #fff;
+    border-left-style: solid;
+    border-left-width: calc(100vw + 10px);
+    border-top: 12vw solid transparent;
+}
+
+.diagonal h2 {
+    color: #fff;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: -1em;
+}
+
+
+blockquote {
+    color: #1a1a1a;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1.25em;
+    font-style: italic;
+    line-height: 1.8em;
+    margin: 1.1em -4em;
+    padding: 1em 2em;
+    position: relative;
+}
+
+blockquote:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -4px;
+    background: linear-gradient(0deg, #00CC8F calc(50% - 1em), transparent calc(50% - 1em)), linear-gradient(180deg, #00CC8F calc(50% - 1em), transparent calc(50% - 1em));
+    width: 4px;
+}
+
+@supports (-ms-ime-align: auto) {
+    blockquote:before {
+        background: linear-gradient(0deg, #00CC8F 40%, transparent 40%), linear-gradient(180deg, #00CC8F 40%, transparent 40%);
+    }
+}
+
+blockquote:after {
+    content: "\f35f";
+    position: absolute;
+    top: 50%;
+    left: calc(-0.5em - 2px);
+    color: #00CC8F;
+    font-family: "Ionicons";
+    font-size: 1.15em;
+    font-style: normal;
+    line-height: 1em;
+    text-align: center;
+    width: 1em;
+    margin-top: -0.5em;
+    transition: .5s all ease-in-out;
+}
+
+blockquote:active:after {
+    transform: rotateY(360deg);
+}
+
+blockquote cite {
+    display: block;
+    font-size: 0.75em;
+    line-height: 1.8em;
+    margin-top: 1em;
+}
+
+
+@media (max-width: 980px) {
+
+
+    blockquote {
+        font-size: 1.1em;
+        margin: 1.1em -2em;
+    }
+}
+
+@media (max-width: 767px) {
+
+    blockquote {
+        border-bottom: 2px solid #00CC8F;
+        border-left: none;
+        margin: 1.5em 0;
+        padding: 1.5em 1em;
+    }
+
+    blockquote:before {
+        left: 0;
+        top: -2px;
+        background: linear-gradient(90deg, #00CC8F calc(50% - 1em), transparent calc(50% - 1em)), linear-gradient(270deg, #00CC8F calc(50% - 1em), transparent calc(50% - 1em));
+        height: 2px;
+        width: 100%;
+    }
+
+}
+
+blockquote:after {
+    font-size: 0.75em;
+    left: 50%;
+    top: calc(-0.5em - 2px);
+    margin-top: 0;
+    margin-left: -0.5em;
+}
+
+blockquote cite {
+    text-align: right;
+}

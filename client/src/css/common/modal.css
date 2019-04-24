@@ -1,0 +1,122 @@
+.modal-window{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    z-index: 99;
+    transform: scaleY(0.01) scaleX(0);
+    animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.modal-window-hide {
+    transform: scale(1);
+    animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes unfoldIn {
+    0% {
+        opacity: 0;
+        transform: scaleY(0.005) scaleX(0);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scaleY(0.005) scaleX(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1) scaleX(1);
+    }
+}
+
+@keyframes unfoldOut {
+    0% {
+        opacity: 1;
+        transform: scaleY(1) scaleX(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scaleY(0.005) scaleX(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scaleY(0.005) scaleX(0);
+    }
+}
+
+
+.modal-window-content {
+    margin: auto auto;
+    padding: 20px;
+    background: #fff;
+    width: 60%;
+    clear: both;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.modal-window-button, .modal-window-button::after {
+    transition: all 0.3s;
+}
+
+.modal-window-button {
+    background: none;
+    border: 2px solid #182978;
+    color: #182978;
+    display: block;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px auto;
+    padding: 10px 25px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.modal-window-button::before,
+.modal-window-button::after {
+    background: #182978;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+.modal-window-button:hover {
+    color: #fff;
+}
+.modal-window-button::after {
+    height: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.modal-window-button:hover:after {
+    height: 100%;
+}
+
+.modal-window-center-content{
+    width: 80%;
+    margin: 10px auto;
+}
+.modal-window-avatar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+.modal-window-img{
+    border: 1px solid #182978;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.modal-window-social{
+    width: 60%;
+
+}

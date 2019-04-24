@@ -1,0 +1,119 @@
+.edit-profile-contetnt {
+    width: 50%;
+    font-size: 40px;
+    float: right;
+    height: 100%;
+    text-align: center;
+}
+
+.edit-profile-form {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+
+.create-profile-contetnt {
+    height: 100%;
+    width: 80%;
+    margin: 10px auto;
+}
+.create-profile-contetnt .info{
+    margin-left:120px;
+}
+
+.img-gif {
+    width: 80%;
+    height: 50%;
+    margin-top: 25%;
+}
+
+
+.edit-profile-header {
+    text-align: center;
+    font-size: 30px;
+    color: #182a78;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+.form_wrapper {
+    background: white;
+    width: 80%;
+    max-width: 100%;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 25px;
+    margin: 120px auto 100px;
+    position: relative;
+    border-top: 5px solid #182a78;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    transform-origin: 50% 0%;
+    transform: scale3d(1, 1, 1);
+    transition: none;
+    animation: expand 0.8s 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+
+@keyframes expand {
+    0% {
+        -webkit-transform: scale3d(1, 0, 1);
+        transform: scale3d(1, 0, 1);
+        opacity: 0;
+    }
+    25% {
+        -webkit-transform: scale3d(1, 1.2, 1);
+        transform: scale3d(1, 1.2, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1, 0.85, 1);
+        transform: scale3d(1, 0.85, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1, 1.05, 1);
+        transform: scale3d(1, 1.05, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+
+
+.submit-btn {
+    width: 100px;
+    height: 50px;
+    padding: 0px;
+}
+
+.color-input {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    border-radius: 100%;
+
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#olive {
+    background-color: olive;
+}
+
+#orange {
+    background-color: orange;
+}
+

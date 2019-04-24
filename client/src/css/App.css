@@ -1,0 +1,339 @@
+/*connect fonts to the project*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates');
+@import "home-page/home.css";
+@import "create-edit-profile/experience.css";
+
+@font-face {
+    font-family: 'Diodrum';
+    src: url('../fonts/Diodrum/Diodrum-Bold.woff2') format('woff2'),
+    url('../fonts/Diodrum/Diodrum-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Big John';
+    src: url('../fonts/BigJohn/BigJohn.woff2') format('woff2'),
+    url('../fonts/BigJohn/BigJohn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/client/src/fonts/Ubuntu/Ubuntu-Medium.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.delete-profile-btn{
+    width: 80%;
+    background-attachment: inherit;
+    margin: 20px auto;
+    border: 2px solid white;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+    transition: all 0.3s linear;
+}
+.delete-profile-btn:hover{
+    background-color: white;
+    color: black;
+}
+a {
+    text-decoration: none;
+
+}
+
+.row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
+    margin-bottom: 10px;
+}
+
+.column {
+    display: table-cell;
+}
+
+.particle-backround {
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+    z-index: 0;
+    position: fixed;
+}
+
+#preloader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#preloader span {
+    display: block;
+    background: #182978;
+    width: 100px;
+    height: 5px;
+    margin-top: 5px;
+    animation: load 2s infinite;
+    border-radius: 5px;
+}
+
+#preloader span:nth-child(2) {
+    animation-delay: 100ms;
+}
+
+#preloader span:nth-child(3) {
+    animation-delay: 200ms;
+}
+
+@keyframes load {
+    50% {
+        width: 5px;
+        margin-right: 95px;
+        opacity: .1;
+    }
+}
+
+
+.aboute-us {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    margin: 200px 25%;
+    color: #182978;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+
+
+}
+
+.aboute-us img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.not-found-root {
+    width: 100%;
+    height: 50%;
+    margin-top: 15%;
+    position: absolute;
+    text-align: center;
+
+}
+
+
+@keyframes bob {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 0.2em;
+    }
+}
+
+.not-found-scene {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.not-found-text {
+    color: #182a78;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+
+.not-found-sheep {
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+}
+
+.not-found-sheep * {
+    transition: transform 0.3s;
+}
+
+.not-found-sheep .not-found-top {
+    position: relative;
+    top: 0;
+    animation: bob 1s infinite;
+}
+
+.not-found-sheep:hover .not-found-head {
+    transform: rotate(0deg);
+}
+
+.not-found-sheep:hover .not-found-head .not-found-eye {
+    width: 1.25em;
+    height: 1.25em;
+}
+
+.not-found-sheep:hover .not-found-head .not-found-eye:before {
+    right: 30%;
+}
+
+.not-found-sheep:hover .not-found-top {
+    animation-play-state: paused;
+}
+
+.not-found-sheep .not-found-head {
+    display: inline-block;
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    background: #211e21;
+    vertical-align: middle;
+    position: relative;
+    top: 1em;
+    transform: rotate(30deg);
+}
+
+.not-found-sheep .not-found-head:before {
+    content: '';
+    display: inline-block;
+    width: 80%;
+    height: 50%;
+    background: #211e21;
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+    border-radius: 50% 40%;
+}
+
+.not-found-sheep .not-found-head:hover .not-found-ear.one, .not-found-sheep .not-found-head:hover .not-found-ear.two {
+    transform: rotate(0deg);
+}
+
+.not-found-sheep .not-found-head .not-found-eye {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    overflow: hidden;
+}
+
+.not-found-sheep .not-found-head .not-found-eye:before {
+    content: '';
+    display: inline-block;
+    background: black;
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    transition: all 0.3s;
+}
+
+.not-found-sheep .not-found-head .not-found-eye.not-found-one {
+    right: -2%;
+    top: 1.7em;
+}
+
+.not-found-sheep .not-found-head .not-found-eye.not-found-two {
+    right: 2.5em;
+    top: 1.7em;
+}
+
+.not-found-sheep .not-found-head .not-found-ear {
+    background: #211e21;
+    width: 50%;
+    height: 30%;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.not-found-sheep .not-found-head .not-found-ear.not-found-one {
+    left: -10%;
+    top: 5%;
+    transform: rotate(-30deg);
+}
+
+.not-found-sheep .not-found-head .not-found-ear.not-found-two {
+    top: 2%;
+    right: -5%;
+    transform: rotate(20deg);
+}
+
+.not-found-sheep .not-found-body {
+    display: inline-block;
+    width: 7em;
+    height: 7em;
+    border-radius: 100%;
+    border: 2px dotted gray;
+    background: white;
+    position: relative;
+    vertical-align: middle;
+    margin-right: -3em;
+}
+
+.not-found-sheep .not-found-legs {
+    display: inline-block;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    z-index: -1;
+}
+
+.not-found-sheep .not-found-legs .not-found-leg {
+    display: inline-block;
+    background: #141214;
+    width: 0.5em;
+    height: 2.5em;
+    margin: 0.2em;
+}
+
+.not-found-sheep:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 112%;
+    width: 100%;
+    height: 10%;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+
+.heart {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+}
+
+.heart.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,199 @@
+.logo-root {
+    font-family: 'Diodrum', sans-serif;
+    font-size: 70px;
+    color: #182978;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    animation: logo-animation-rubber-band 10s linear infinite;
+}
+.logo-left-animation-text {
+    animation: logo-animation-hook-text-left 10s linear infinite ;
+}
+.logo-rigth-animation-text {
+    animation: logo-animation-hook-text-right 10s linear infinite ;
+}
+.logo-animation-center-content-body {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 2px 4px 4px;
+}
+.logo-animation-center-content-z0{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../images/logo-icon/logo-icon-root.svg");
+}
+.logo-animation-center-content-z1 {
+    content: url(../../images/logo-icon/logo-icon-lamp.svg);
+    height: 20px;
+    position: absolute;
+    animation: logo-animation-icon-change 10s linear infinite;
+}
+
+@keyframes logo-animation-hook-text-left {
+    0% {
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(0px);
+    }
+    80%{
+        transform: translateX(-7px);
+    }
+    85% {
+        transform: translateX(-14px);
+    }
+    90%{
+        transform: translateX(-7px);
+    }
+    95%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes logo-animation-hook-text-right {
+    0% {
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(0px);
+    }
+    80%{
+        transform: translateX(7px);
+    }
+    85% {
+        transform: translateX(14px);
+    }
+    90%{
+        transform: translateX(7px);
+    }
+    95%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes logo-animation-icon-change {
+    0% {
+        content: url(../../images/logo-icon/logo-icon-lamp.svg);
+        opacity: 0;
+    }
+    6% {
+        opacity: 0.5;
+    }
+    9% {
+        transform: scale(1);
+    }
+    12% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    15% {
+        transform: scale(0.8);
+    }
+    18% {
+        transform: scale(1);
+        opacity: 0.5;
+        content: url(../../images/logo-icon/logo-icon-lamp.svg);
+    }
+    24% {
+        opacity: 0;
+    }
+
+    30% {
+        content: url(../../images/logo-icon/logo-icon-book.svg);
+        opacity: 0.5;
+    }
+    33% {
+        transform: scale(1);
+    }
+    36% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    39% {
+        transform: scale(0.8)
+    }
+    42% {
+        transform: scale(1);
+        opacity: 0.5;
+        content: url(../../images/logo-icon/logo-icon-book.svg);
+    }
+    48% {
+        opacity: 0;
+    }
+
+    54% {
+        content: url(../../images/logo-icon/logo-icon-pen.svg);
+        opacity: 0.5;
+    }
+    57% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    63% {
+        transform: scale(0.8)
+    }
+    66% {
+        transform: scale(1);
+        opacity: 0.5;
+        content: url(../../images/logo-icon/logo-icon-pen.svg);
+    }
+    72% {
+        opacity: 0;
+    }
+
+    78% {
+        content: url(../../images/logo-icon/logo-icon-vortex.svg);
+        opacity: 0.5;
+        transform: rotate(0deg);
+    }
+    84% {
+        opacity: 1;
+    }
+    90% {
+        transform: rotate(360deg);
+    }
+    96% {
+        opacity: 1;
+    }
+    100% {
+        content: url(../../images/logo-icon/logo-icon-vortex.svg);
+        opacity: 0.5;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes logo-animation-rubber-band {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    90% {
+        transform: scale3d(1, 1, 1);
+    }
+    91.5% {
+        transform: scale3d(1.20, 0.80, 1);
+    }
+    93% {
+        transform: scale3d(0.80, 1.20, 1);
+    }
+    94.5% {
+        transform: scale3d(1.10, 0.90, 1);
+    }
+    96% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    97.5% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}

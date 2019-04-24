@@ -1,0 +1,9 @@
+.profile-list-item{
+    width: 30%;
+    height: 300px;
+    margin: 30px 35%;
+    text-align: center;
+   box-shadow: inset -200px -200px 300px 200px rgba(24, 42, 120, 0.59);
+    position: relative;
+
+}
